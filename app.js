@@ -1,5 +1,5 @@
 (function () {
-	
+
     let app = angular.module('chevyChase', ['ui.router']);
 
     app.config(AppConfig);
@@ -14,6 +14,11 @@
             .state('categories', {
                 url: '/categories',
                 component: 'categoryDetail'
+            })
+
+            .state('category', {
+                url: '/category/:id',
+                component: 'category'
             });
     }
 

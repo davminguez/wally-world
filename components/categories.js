@@ -5,7 +5,7 @@
     app.component('categoryDetail', {
         bindings: {
         },
-        templateUrl: 'categories.html',
+        templateUrl: 'templates/categories.html',
         controller: CategoryDetail,
         controllerAs: 'cd'
     });

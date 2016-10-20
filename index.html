@@ -11,7 +11,7 @@
 	<link rel="icon" href="favicon.ico">
 
 	<title>Wally World</title>
-		
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="site.css">
 </head>
@@ -43,7 +43,11 @@
 			<div class="col-sm-3 col-md-2 sidebar">
 				<ul class="nav nav-sidebar">
 					<!-- Category Links -->
-				
+					<li ui-sref-active="active"><a ui-sref="categories">Categories</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976780'})">Baking</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976782'})">Beverages</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976783'})">Breakfast and Cereal</a></li>
+			
 				</ul>
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -60,7 +64,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-beta.3/angular-ui-router.min.js"></script>
 	<script src="app.js"></script>
-	<script src="categories.js"></script>
+	<script src="components/categories.js"></script>
+	<script src="components/category.js"></script>
 </body>
 
 </html>
