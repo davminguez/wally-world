@@ -30,10 +30,12 @@
 				<a class="navbar-brand" href="#">Wally World</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-				<form class="navbar-form navbar-right">
-					<input type="text" class="form-control" placeholder="Search...">
-					<button class="btn btn-primary">Go</button>
-				</form>
+				<div class="navbar-form navbar-right navbar-brand">
+					<div class="navbar-right">
+						<cart>
+						</cart>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -44,10 +46,15 @@
 				<ul class="nav nav-sidebar">
 					<!-- Category Links -->
 					<li ui-sref-active="active"><a ui-sref="categories">Categories</a></li>
-					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976780'})">Baking</a></li>
-					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976782'})">Beverages</a></li>
-					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976783'})">Breakfast and Cereal</a></li>
-			
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976780', start:1})">Baking</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976782', start:1})">Beverages</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976783', start:1})">Breakfast & Cereal</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_1096070', start:1})">Candy & Gum</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_1086446', start:1})">Coffee</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_1071964', start:1})">Fresh Food</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976791', start:1})">Frozen Foods</a></li>
+					<li ui-sref-active="active"><a ui-sref="category({id:'976759_976787', start:1})">Snacks, Cookies & Chips</a></li>
+				
 				</ul>
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -63,9 +70,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-beta.3/angular-ui-router.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
 	<script src="app.js"></script>
+	<script src="services/wallyservice.js"></script>
+	<script src="services/cartService.js"></script>
 	<script src="components/categories.js"></script>
 	<script src="components/category.js"></script>
+	<script src="components/product.js"></script>
+	<script src="components/detail.js"></script>
+	<script src="components/cart.js"></script>
 </body>
 
 </html>

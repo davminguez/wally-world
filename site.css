@@ -129,3 +129,24 @@ svg text:first-of-type {
   fill: #000;
   transform: translate(0 50%);
 }
+.product {
+ display: inline-block;
+ margin: 10px;
+ margin-bottom: 50px;
+ padding: 5px;
+ text-align: center;
+ width: 200px;
+ border: solid 1px #7cc3ec;
+ border-radius: 5px;
+ 
+}
+#sale-price {
+  color: #007dc6;
+}
+#product-name {
+  font-size: 12px;
+}
+
+.product img {
+  max-width: 180px;
+}

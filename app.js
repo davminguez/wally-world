@@ -1,7 +1,10 @@
 (function () {
 
-    let app = angular.module('chevyChase', ['ui.router']);
+    let app = angular.module('chevyChase', ['ui.router', 'ui.bootstrap']);
 
+    app.constant('PaginatedApiUrl', 'http://api.walmartlabs.com/v1/search?query=food&format=json&apiKey=ap2qbf3wge6fcgshsxa5nxm5&categoryId=')
+    app.constant('ProductDetailApiUrl', 'http://api.walmartlabs.com/v1/items/{itemId}?format=json&apiKey=ap2qbf3wge6fcgshsxa5nxm5');
+    
     app.config(AppConfig);
 
     AppConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -17,8 +20,13 @@
             })
 
             .state('category', {
-                url: '/category/:id',
+                url: '/category/:id/:start?',
                 component: 'category'
+            })
+
+            .state('detail', {
+                url: '/detail/:id',
+                component: 'detail'
             });
     }
 
