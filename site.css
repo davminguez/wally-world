@@ -145,8 +145,26 @@ svg text:first-of-type {
 }
 #product-name {
   font-size: 12px;
+  
 }
 
 .product img {
   max-width: 180px;
+}
+
+.rating {
+  font-size: 10px;
+  margin: 0;
+}
+
+#btns {
+  margin-top: 5px;
+}
+
+#nav-cart {
+  margin-right: 15px;
+}
+
+.navbar-brand {
+  font: #fff;
 }
