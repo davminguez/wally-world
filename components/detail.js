@@ -12,9 +12,9 @@
         controllerAs: 'dc'
     });
 
-    Detail.$inject = ['$state', '$stateParams', 'wallyService'];
+    Detail.$inject = ['$state','$rootScope', '$stateParams', 'wallyService'];
 
-    function Detail($state, $stateParams, wallyService) {
+    function Detail($state, $rootScope, $stateParams, wallyService) {
 
         let dc = this;
         let itemId = $stateParams.id;
@@ -32,6 +32,9 @@
             .catch(function (error) {
                 console.log(error);
             })
+            dc.addToCart = function (item) {
+            $rootScope.$broadcast('BuyItem', {item: item, qty: 1})
+        };
     }
 
 })();

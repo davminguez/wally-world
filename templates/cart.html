@@ -1,3 +1,8 @@
-<div id="nav-cart">
-	<span><button type="button" class="btn btn-link" ng-click="cc.showMap()">Stores</button><h5>Cart | Items ({{cc.totalItems}}) | {{cc.totalCost | currency}}</h5></span>
+<div id="nav-cart" class="row">
+	<div class="col-xs-6">
+		<button type="button" class="btn btn-link" ng-click="cc.showMap()">Stores</button>
+	</div>
+	<div class="col-xs-6">
+		<h5>Cart | Items ({{cc.totalItems}}) | {{cc.totalCost | currency}}</h5>
+	</div>
 </div>
